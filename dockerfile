@@ -2,7 +2,7 @@ FROM python:3-stretch
 MAINTAINER Daniel Winks
 
 VOLUME /src
-COPY pwrstat-api.py requirements.txt PPL-*-64bit.deb  powerpanel_*_amd64.deb init.sh /src/
+COPY pwrstat-api.py requirements.txt PPL-*-64bit.deb PPL_*.deb  powerpanel_*_amd64.deb init.sh /src/
 WORKDIR /src
 RUN chmod +x /src/init.sh
 RUN chmod +x /src/pwrstat-api.py
